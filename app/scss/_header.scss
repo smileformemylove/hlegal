@@ -19,12 +19,19 @@
     height: 42px;
     margin: 30px auto;
     border-radius: $radius-rounded;
-    border: 1px solid $basic-white;
+    border: 2px solid $basic-white;
     position: relative;
 
     &::before {
       position: absolute;
       content: "";
+      top: 25%;
+      left: 30%;
+      width: 15px;
+      height: 15px;
+      transform: rotate(44deg);
+      border-bottom: 2px solid $basic-white;
+      border-right: 2px solid $basic-white;
     }
   }
 }
@@ -105,8 +112,12 @@
         width: 24px;
         height: 24px;
         fill: white;
+        transition: 0.3s;
       }
       
+      &:hover svg {
+        fill: $accent-color2;
+      }
       
     }
   }
@@ -263,7 +274,7 @@
     padding: 10px;
     background: $bg-color;
     display: block;
-    font-size: 24px;
+    font-size: 16px;
     &.active{
       color: $accent-color2;
     }

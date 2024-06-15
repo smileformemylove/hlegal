@@ -51,6 +51,7 @@
     white-space: nowrap;
     display: block;
     cursor: pointer;
+    transition: 0.3s;
 
     &:hover{
       color: $accent-color2;
