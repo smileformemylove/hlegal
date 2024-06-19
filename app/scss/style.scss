@@ -3,7 +3,10 @@
 @import "vars";
 @import "mixins";
 @import "global";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/pagination.scss";
 @import "header";
 @import "services";
 @import "tabs";
 @import "hero";
+@import "team";

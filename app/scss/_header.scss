@@ -33,6 +33,12 @@
       border-bottom: 2px solid $basic-white;
       border-right: 2px solid $basic-white;
     }
+    &:hover{
+      border-color: $accent-color2;
+    }
+    &:hover::before{
+      border-color: $accent-color2;
+    }
   }
 }
 

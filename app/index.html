@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="you legal solutions provider ">
 	<title>Hlegal</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>	
 	<link rel="stylesheet" href="css/style.min.css" />
 	<style>
 		*,
@@ -30,10 +31,7 @@
 			opacity: 0;
 		}
 
-		.icons {
-			display: flex;
-			gap: 20px;
-		}
+		.icons {}
 
 		.icon {
 			padding: 14px;
@@ -49,7 +47,7 @@
 	</style>
 </head>
 
-<body>
+<body class="body">
 	<div class="wrapper">
 		<div class="head">
 			<header class="head__header header">
@@ -157,7 +155,7 @@
 		<section class="hero">
 			<div class="container hero__container">
 				<div class="hero__top">
-					<a href="#">Services</a>
+					<a class="hero__link" href="#">Services</a>
 					<p>What can we do better than others?</p>
 				</div>
 
@@ -166,7 +164,7 @@
 						<article class="hero__icons icons">
 							<div class="hero__icon icon">
 								<svg>
-									<use class="hero__img icons" href="#iconCoprorate"></use>
+									<use class="hero__img icons" href="#iconEccomerce"></use>
 								</svg>
 							</div>
 							<div class="hero_discriprion">
@@ -177,7 +175,7 @@
 						<article class="hero__icons icons">
 							<div class="hero__icon icon">
 								<svg>
-									<use class="hero__img" href="#iconEccomerce"></use>
+									<use class="hero__img" href="#iconSupport"></use>
 								</svg>
 							</div>
 							<div class="hero_discriprion">
@@ -188,7 +186,7 @@
 						<article class="hero__icons icons">
 							<div class="hero__icon icon">
 								<svg>
-									<use class="hero__img" href="#iconLayer"></use>
+									<use class="hero__img" href="#iconCoprorate"></use>
 								</svg>
 							</div>
 							<div class="hero_discriprion">
@@ -198,7 +196,7 @@
 						<article class="hero__icons icons">
 							<div class="hero__icon icon">
 								<svg>
-									<use class="hero__img" href="#iconProtection"></use>
+									<use class="hero__img" href="#iconTrust"></use>
 								</svg>
 							</div>
 							<div class="hero_discriprion">
@@ -208,7 +206,7 @@
 						<article class="hero__icons icons">
 							<div class="hero__icon icon">
 								<svg>
-									<use class="hero__img" href="#iconSupport"></use>
+									<use class="hero__img" href="#iconProtection"></use>
 								</svg>
 							</div>
 							<div class="hero_discriprion">
@@ -218,7 +216,7 @@
 						<article class="hero__icons icons">
 							<div class="hero__icon icon">
 								<svg>
-									<use class="hero__img" href="#iconTrust"></use>
+									<use class="hero__img" href="#iconLayer"></use>
 								</svg>
 							</div>
 							<div class="hero_discriprion">
@@ -227,9 +225,66 @@
 						</article>
 					</div>
 					
+					
 			</div>
 		</section>
 	</div>
+
+	<section class="team">
+		<div class="container team__container">
+			<div class="swiper team__swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper team__wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide team__slide">
+						<div class="team__image">
+							<img src="images/team-1.jpg" alt="alexander" width="315" height="500">
+						</div>
+						<div class="team__inner">
+							<a class="team__inner-bread" href="#">команда</a>
+							<h3 class="team__inner-title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
+							<div class="team__inner-name">
+								<p>Олександр Олександровський</p>
+								<p>Керуючий партнер</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide team__slide">
+						<div class="team__image">
+							<img src="images/team-2.jpg" alt="alexander" width="315" height="500">
+						</div>
+						<div class="team__inner">
+							<a class="team__inner-bread" href="#">команда</a>
+							<h3 class="team__inner-title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
+							<div class="team__inner-name">
+								<p>Евгеній Патріков</p>
+								<p>Equity partner, Attorney-at-law</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide team__slide">
+						<div class="team__image">
+							<img src="images/team-3.jpg" alt="alexander" width="315" height="500">
+						</div>
+						<div class="team__inner">
+							<a class="team__inner-bread" href="#">команда</a>
+							<h3 class="team__inner-title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
+							<div class="team__inner-name">
+								<p>Владислав Мельник</p>
+								<p>Associate</p>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			
+			</div>				
+			</div>
+		</div>
+	</section>
 
 
 	<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
@@ -394,6 +449,7 @@
 			</defs>
 		</symbol>
 	</svg>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 
