@@ -1,0 +1,62 @@
+.partner {
+  padding: 60px 0 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__paragraph{
+    margin-bottom: 30px;
+  }
+  
+  &__paragraph h3{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 17px;
+    color: $main-color;
+    text-align: center;
+  }
+  
+  &__log1 {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:$breakpoint-md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  &__log1 img{
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+    @media screen and (min-width:$breakpoint-md){
+      width: 33.3333%;
+      flex: 1 1;
+    }  
+  }
+
+  // ВИПРАВИТЬ ВИСОТУ БО НИЖНІ 6 ЧОМУ ВИЩІ!!!!!!
+
+  &__log2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @media screen and (min-width:$breakpoint-md){
+      width: 33.333%;
+      flex: 1 1;
+    }    
+  }
+
+  &__log2 {     
+    display: none;
+      @media screen and (min-width:$breakpoint-md){
+      display: flex;
+      flex-wrap: wrap;      
+    }
+  }
+}
+

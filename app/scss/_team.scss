@@ -1,5 +1,8 @@
 .team {
-  padding: 50px 0 46px;
+  padding: 50px 0 0;
+  @media screen and (min-width: $breakpoint-md) {
+    padding: 80px 0;    
+  }
 
   &__container {
   }
@@ -62,6 +65,18 @@
       margin-top: 6px;
       font-weight: 400;
       font-size: 14px;
+    }
+  }
+
+  &__pagination{
+    position: static;
+    margin-top: 30px;
+    line-height: 16px;
+
+    .swiper-pagination-bullet{
+      width: 16px;
+      height: 16px;
+      background: $regular-color;
     }
   }
 }

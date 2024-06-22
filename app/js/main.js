@@ -33,10 +33,15 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
+	autoplay: {
+		delay: 3000,
+	},
+	spaceBetween: 30,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+		clickable: true,
   },
 
 
