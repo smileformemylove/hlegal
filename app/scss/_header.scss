@@ -282,6 +282,10 @@
     display: block;
     font-size: 16px;
     &.active{
+      color: $accent-color;
+    }
+
+    &:hover{
       color: $accent-color2;
     }
 

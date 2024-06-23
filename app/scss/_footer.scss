@@ -2,10 +2,17 @@
   padding: 32px 30px 30px;
   background: $bg-color;
 
+
   &_social {
     display: flex;
     justify-content: center;
+    
+
+    &:hover svg{
+    transition: all 0.3s linear;
+    fill: $accent-color2;
   }
+}
 
   &__container {
     position: relative;
@@ -13,10 +20,26 @@
   }
 
   &__main {
+    position: relative;
+    @media screen and (min-width: $breakpoint-md) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    }
   }
 
   &__top {
     text-align: center;
+    flex-direction: column;
+
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      order: 0;
+      gap: 14px;
+    }
   }
 
   &__top-adress {
@@ -33,6 +56,10 @@
       height: 4px;
       background: $separator-color;
     }
+
+    @media screen and (min-width: $breakpoint-md){
+      margin-bottom: 0;
+    }
   }
 
   &__top-map {
@@ -44,12 +71,24 @@
     text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 21px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
   }
 
   &__center {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      flex-direction: row;
+      align-items: center;
+      order: 3;
+    }
   }
 
   &__facebook {
@@ -78,7 +117,23 @@
     text-align: center;
   }
 
+  &__dotted {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-md) {
+      background: $text-color;
+  }
+}
+
   &__discription {
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      align-items: center;
+      order: 2;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 
   &__discription p{
@@ -87,7 +142,10 @@
     color: $text-color;
     white-space: nowrap;
     margin-top: 30px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      margin-top: 0;
+    }
   }
 
 }
-
