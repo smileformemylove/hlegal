@@ -2,70 +2,215 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="you legal solutions provider ">
+	<title>IT and e-commerce</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>	
 	<link rel="stylesheet" href="css/style.min.css" />
-	<title>Document</title>
+	<style>
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			background: #ccc;
+		}
+
+		ul,
+		li {
+			list-style: none;
+		}
+
+		.hidden {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+
+		.icons {}
+
+		.icon {
+			padding: 14px;
+			line-height: 10px;
+			background: #fff;
+			border-radius: 24px;
+		}
+
+		.icon svg {
+			width: 64px;
+			height: 64px;
+		}
+	</style>
 </head>
 
-<body>
+<body class="body">
 	<div class="wrapper">
-		<header class="header">
-			<div class="container header__container">
-				<!-- 1 inner-->
-				<div class="header__inner">
-					<ul class="header__langs">
-						<li class="header__langs-item">
-							<a class="header__langs-link" href="#">UA</a>
-						</li>
-						<li class="header__langs-item">
-							<a class="header__langs-link" href="#">PL</a>
-						</li>
-						<li class="header__langs-item">
-							<a class="header__langs-link active" href="#">EN</a>
-						</li>
-					</ul>
-					<span class="dotted dotted--white"></span>
-					<p class="header__address">Kyiv, Mechnikova str., 14/1</p>
-					<span class="dotted dotted--white"></span>
-					<a class="header__phone" href="tel:0800211927">0800 211 927</a>
-					<span class="dotted dotted--white"></span>
-					<p class="header__social">F</p>
-				</div>
-				<!-- 2 logo-->
-				<div class="header__box">
-					<a class="header__box-logo" href="#">
-						<img src="images/logo.svg" alt="Hlegal" width="69" height="32">
-						<!-- <span>services</span> -->
-					</a>
-					<div class="header__box-burger">
-						<span></span>
+			<header class="head__header header">
+				<div class="container header__container">
+					<!-- 1 inner-->
+					<div class="header__inner">
+						<ul class="header__langs">
+							<li class="header__langs-item">
+								<a class="header__langs-link" href="#">UA</a>
+							</li>
+							<li class="header__langs-item">
+								<a class="header__langs-link" href="#">PL</a>
+							</li>
+							<li class="header__langs-item">
+								<a class="header__langs-link active" href="#">EN</a>
+							</li>
+						</ul>
+						<span class="dotted dotted--white"></span>
+						<p class="header__address">Kyiv, Mechnikova str., 14/1</p>
+						<span class="dotted dotted--white"></span>
+						<a class="header__phone" href="tel:0800211927">0800 211 927</a>
+						<span class="dotted dotted--white"></span>
+						<p class="header__social">
+							<a href="#">
+								<svg class="header__facebook">
+									<use href = "images/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</p>
 					</div>
+					<!-- 2 logo-->
+					<div class="header__box">
+						<a class="header__box-logo" href="#">
+							<img src="images/logo.svg" alt="Hlegal" width="69" height="32">
+							<!-- <span>services</span> -->
+						</a>
+						<div class="header__box-burger">
+							<span></span>
+						</div>
+					</div>
+					<!-- 3 navigation -->
+					<nav class="header__nav">
+						<div class="header__nav-close"></div>
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="index.html">about us</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link active" href="service.html">services</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="team.html">team</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">publications</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">contact</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<!-- 3 navigation -->
-				<nav class="header__nav">
-					<div class="header__nav-close"></div>
-					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="index.html">home</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#">services</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#">services</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#">services</a>
-						</li>
-						<li class="header__nav-item">
-							<a class="header__nav-link" href="#">services</a>
-						</li>
-					</ul>
-				</nav>
+			</header>
+
+<section class="hero">
+			<div class="container hero__container">
+				<div class="hero__list-main">
+					<div class="hero__article-main">
+						<article class="hero__icons-main icons">
+							<div class="hero__icon-main icon">
+								<svg>
+									<use class="hero__img-main icons" href="#iconEccomerce"></use>
+								</svg>
+							</div>
+							<div class="hero_discriprion-main">
+								<h3>IT and e-commerce</h3>
+								<p>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+                <p>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+							</div>
+                <div class="hero__bnt">
+                <button class="hero__btns">Free consultation</button>
+              </div>
+              <div class="hero__describe">
+                <h4>Services in this area:</h4>
+                <div class="hero__describe-paragraph">
+                  <p>support of investment projects for the development of port infrastructure;</p>
+                  <p>certification of GTS, entering information about them in mandatory databases and registers;</p>
+                  <p>registration of permits for the construction of port terminals;</p>
+                  <p>registration of permit and other mandatory documentation required for carrying out activities in the port (emission permit, conclusion on EIA, RTC, etc.);</p>
+                  <p>support of procedures related to the lease of state property in the port;</p>
+                  <p>support of procedures related to confirmation of the status of port operator, maritime agent, foreign sailing line;</p>
+                  <p>support of procedures related to the inclusion of the company within the port;</p>
+                  <p>appeals against actions related to the illegal imposition of services in the port by monopoly companies.</p>
+                </div>
+              </div>
+					</div>	
+
 			</div>
-		</header>
+		</section>
 	</div>
+
+
+	<section class="publications">
+		<div class="container publications__container-main">
+			<div class="publications__header-main">
+				<a class="publications__inner-bread" href="#">publications</a>
+				<h3 class="publications__inner-title">We have something to tell</h3>
+			</div>
+			<div class="publications__articles">
+				<article class="publications__article">
+					<img src="images/publications1.png" alt="publications" width="350" height="200">
+					<div class="publications__discriotion">
+						<h4>Equity associate</h4>
+						<p class="publications__firstp">April 22</p>
+						<p class="publications_secondp">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+					</div>
+				</article>
+				<article class="publications__article">
+					<img src="images/publications2.png" alt="publications2" width="350" height="200">
+					<div class="publications__discriotion">
+						<h4>Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
+						<p class="publications__firstp">September 29</p>
+						<p class="publications_secondp">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+					</div>
+				</article>
+				<article class="publications__article">
+					<img src="images/publications3.png" alt="publications3" width="350" height="200">
+					<div class="publications__discriotion">
+						<h4>Millennial Testament</h4>
+						<p class="publications__firstp">August 19</p>
+						<p class="publications_secondp">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__main">
+				<div class="footer__top">
+					<p class="footer__top-adress">Kyiv, Mechnikova str., 14/1</p>
+					<span class="dotted footer__dotted"></span>
+					<p class="footer__top-map">on map</p>
+				</div>
+				<div class="footer__center">
+					<p class="footer_social">
+						<a href="#">
+							<svg class="footer__facebook">
+								<use href = "images/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</p>
+					<span class="footer__dotted dotted"></span>
+					<a class="footer__phone" href="tel:0800211927">0800 211 927</a>
+					<span class="dotted footer__dotted "></span>
+					<a class="footer__mail" href="email:contact@forstudy.space">contact@forstudy.space</a>
+				</div>
+				<div class="footer__discription">
+					<p>© 2021 HLEGAL Law company, LLC</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
@@ -230,6 +375,7 @@
 			</defs>
 		</symbol>
 	</svg>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 

@@ -39,6 +39,7 @@
   &__article {
     border-radius: 8px;
     background: $basic-white;
+    overflow: hidden;
 
     @media screen and (min-width: $breakpoint-md) {
       flex: 1 1 47%;
@@ -90,7 +91,10 @@
     line-height: 22px;
     margin-top: 34px;
   }
-}
+
+  // first page 
+
+
 
 
 

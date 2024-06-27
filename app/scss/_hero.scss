@@ -62,6 +62,7 @@
 
   &__icon {
     width: 92px;
+    cursor: pointer;
   }
 
   // .hero__img
@@ -69,14 +70,14 @@
   &__img {
   }
 
-  &_discriprion {
+  &_discriprion  {
     margin-top: 30px;
     color: $regular-color;
     font-weight: 700;
     font-size: 22px;
   }
 
-  &_discriprion p{
+  &_discriprion p{ 
     margin-top: 15px;
     color: $basic-white;
     font-size: 16px;
@@ -84,8 +85,130 @@
     line-height: 26px;
   }
 
-  
+  &_discriprion a{
+    display: inline-block;
+    color: $regular-color;
+    text-decoration: none;
+    &:hover {
+      color: $accent-color2;
+    }
+  }
+
+//  first page
+
+
+  &_discriprion-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &_discriprion-main h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    margin: 28px 0 8px;
+    @include main-gradient-text;
+  }
+
+  &_discriprion-main p{
+    font-size: 19px;
+    line-height: 30px;
+    color: $basic-white;
+    text-align: center;
+  }
+
+  &__list-main {
+  }
+
+  &__article-main {
+  }
+
+  &__icons-main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon-main {
+    width: 92px;
+
+  }
+
+  &__img-main {
+  }
+
+  &__btn {
+  }
+
+  &__btns {
+    font-weight: 700;
+    line-height: 19.5px;
+    border-radius: 12px;
+    margin-top: 28px;
+    padding: 18px 30px;
+    background: $regular-color;
+    color: $basic-white;
+  }
+
+  &__describe {
+    margin-top: 64px;
+  }
+
+  &__describe h4{
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26.82px;
+    color: $basic-white;
+    margin-bottom: 30px;
+
+    &::before {
+    position: absolute;
+    content: '';
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, .5);
+    }
+  }
+
+  &__describe-paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__describe-paragraph p{
+    position: relative;
+    padding-left: 14px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $basic-white;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 11px;
+      left: 0.04px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $accent-color2;
+    }
+  }
+
 }
+
+
+
+
+
+
 
 .hero::after{
   position: absolute;
